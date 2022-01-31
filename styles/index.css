@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap');
+
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(25, 25, 94);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.content-holder {
+    max-width: 1240px;
+    min-height: 50px;
+    margin: 0px auto;
+}
+
+.header {
+    padding: 50px 50px 50px 0;
+}
+
+.header .logo {
+    font-size: 50px;
+    font-weight: 100;
+    color: #fff;
+    padding-top: 30px;
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section .card {
+    width: 190px;
+    height: 190px;
+    padding: 20px;
+    background-color: cadetblue;
+    margin: 10px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+}
+
+
+.card-icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: #fff;
+    /* left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto; */
+}
+
+.card-title {
+    justify-self: self-end;
+}
+
+.section .card:nth-child(1) {
+    background-color: #3387ea;
+}
+
+.section .card:nth-child(2) {
+    background-color: #f9be3e;
+}
+
+.section .card:nth-child(3) {
+    width: 380px;
+    background-color: #d3573e;
+}
+
+.section .card:nth-child(4) {
+    background-color: #59b0e2;
+}
+
+.section .card:nth-child(5) {
+    background-color: #32af95;
+}
+
+.section .card:nth-child(6) {
+    width: 400px;
+    background-color: #86a73f;
+}
+
+.section .card:nth-child(7) {
+    width: 590px;
+    background-color: #151a26;
+}
+
+.section .card:nth-child(8) {
+    background-color: #7e5b8c;
+}
+
+.social-media-logos {
+    display: flex;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-media-logos .social-media-logo {
+    width: 80px;
+    height: 80px;
+    background-color: tomato;
+    margin: 10px;
+}
+
+.footer-container .text {
+    margin: 30px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.social-media-logos .social-media-logo:nth-child(1) {
+    background-color: #014088;
+}
+
+.social-media-logos .social-media-logo:nth-child(2) {
+    background-color: #00abe3;
+}
+
+.social-media-logos .social-media-logo:nth-child(3) {
+    background-color: #f14825;
+}
