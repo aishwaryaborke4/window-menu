@@ -34,7 +34,7 @@ body {
     flex-wrap: wrap;
 }
 
-.section .card {
+.section .card:not(:nth-child(7), :nth-child(8)) {
     width: 190px;
     height: 190px;
     padding: 20px;
@@ -45,6 +45,17 @@ body {
     flex-direction: column;
     justify-content: flex-end;
     position: relative;
+    transition: all ease-in 200ms;
+}
+
+.section .card:hover .card-icon,
+.section .card:focus .card-icon {
+    filter: blur(2px);
+}
+
+.section .card:hover .card-title,
+.section .card:focus .card-title {
+    font-weight: 800;
 }
 
 
@@ -55,6 +66,7 @@ body {
     transform: translate(-50%, -50%);
     font-size: 40px;
     color: #fff;
+    transition: all ease-in 200ms;
     /* left: 0;
     top: 0;
     bottom: 0;
@@ -64,14 +76,23 @@ body {
 
 .card-title {
     justify-self: self-end;
+    transition: all ease-in 200ms;
 }
 
 .section .card:nth-child(1) {
     background-color: #3387ea;
 }
 
+.section .card:nth-child(1):hover {
+    background-color: #1d68bd;
+}
+
 .section .card:nth-child(2) {
     background-color: #f9be3e;
+}
+
+.section .card:nth-child(2):hover {
+    background-color: #c29024;
 }
 
 .section .card:nth-child(3) {
@@ -79,12 +100,24 @@ body {
     background-color: #d3573e;
 }
 
+.section .card:nth-child(3):hover {
+    background-color: #993b28;
+}
+
 .section .card:nth-child(4) {
     background-color: #59b0e2;
 }
 
+.section .card:nth-child(4):hover {
+    background-color: #357ba3;
+}
+
 .section .card:nth-child(5) {
     background-color: #32af95;
+}
+
+.section .card:nth-child(5):hover {
+    background-color: #20836f;
 }
 
 .section .card:nth-child(6) {
@@ -92,14 +125,31 @@ body {
     background-color: #86a73f;
 }
 
+.section .card:nth-child(6):hover {
+    background-color: #6b882d;
+}
+
 .section .card:nth-child(7) {
-    width: 590px;
-    background-color: #151a26;
+    width: 190px;
+    background-color: #92e6d5;
+    margin: 10px 0px 10px 10px;
 }
 
 .section .card:nth-child(8) {
+    width: 400px;
+    margin: 10px 10px 10px 0px;
+    background-color: #151a26;
+}
+
+
+.section .card:nth-child(9) {
     background-color: #7e5b8c;
 }
+
+.section .card:nth-child(9):hover {
+    background-color: #5a3d66;
+}
+
 
 .social-media-logos {
     display: flex;
@@ -113,8 +163,38 @@ body {
 .social-media-logos .social-media-logo {
     width: 80px;
     height: 80px;
-    background-color: tomato;
     margin: 10px;
+    color: #fff;
+}
+
+.social-media-logo .right-logo {
+    display: flex;
+    padding-top: 19px;
+    justify-content: flex-end;
+}
+
+.right-logo .fa-facebook-f {
+    font-size: 60px;
+}
+
+.social-media-logo .center-logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.center-logo .fa-twitter {
+    font-size: 40px;
+}
+
+.social-media-logo .left-logo {
+    display: flex;
+    justify-content: flex-start;
+    padding: 32px 0 0 7px;
+}
+
+.left-logo .fa-google-plus-g {
+    font-size: 50px;
 }
 
 .footer-container .text {
@@ -123,14 +203,68 @@ body {
     font-size: 16px;
 }
 
+.footer-container .text:hover {
+    font-size: 17px;
+}
+
 .social-media-logos .social-media-logo:nth-child(1) {
     background-color: #014088;
+}
+
+.social-media-logos .social-media-logo:nth-child(1):hover {
+    background-color: #032f61;
 }
 
 .social-media-logos .social-media-logo:nth-child(2) {
     background-color: #00abe3;
 }
 
+.social-media-logos .social-media-logo:nth-child(2):hover {
+    background-color: #0780a8;
+}
+
 .social-media-logos .social-media-logo:nth-child(3) {
     background-color: #f14825;
+}
+
+.social-media-logos .social-media-logo:nth-child(3):hover {
+    background-color: #c03115;
+}
+
+.copy-image {
+    background: url("../images/image-copy.jpg") center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.card-page {
+    padding: 20px;
+    color: #fff;
+}
+
+.card-page .first-title {
+    font-size: 16px;
+    padding-bottom: 25px;
+}
+
+.card-page .first-title:hover {
+    font-size: 19px;
+}
+
+.card-page p {
+    font-size: 25px;
+    padding-bottom: 25px;
+}
+
+.card-page p:hover {
+    letter-spacing: 1px;
+}
+
+.card-page .last-title {
+    font-size: 13px;
+}
+
+.card-page .last-title:hover {
+    font-size: 15px;
 }
